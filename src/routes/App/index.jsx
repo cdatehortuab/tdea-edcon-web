@@ -1,11 +1,10 @@
 import React from 'react';
-
-import { childrenPropType } from '../../utils/propTypes';
+import PropTypes from 'prop-types';
 
 const App = ({ children }) => <div>{children}</div>;
 
 App.propTypes = {
-  children: childrenPropType,
+  children: PropTypes.node,
 };
 
 App.defaultProps = {
