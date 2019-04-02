@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import App from './App';
+import AppRouter from './AppRouter';
 import * as serviceWorker from './serviceWorker';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -11,7 +11,7 @@ import './index.scss';
 
 ReactDOM.render(
   React.createElement(
-    Router, null, React.createElement(App),
+    Router, null, React.createElement(AppRouter),
   ), document.getElementById('root'),
 );
 
